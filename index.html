@@ -6,27 +6,89 @@
 
 
 
+<docktype!html>
+<html>
+<head><h1><center>🥰 Welcome To My Website 🥰</h1></center><head>
+<hr>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+
+</style>
+</head>
+<body>
 
 
 
+<button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen"><li><a href="https://www.dreamstime.com/photos-images/landscape.html">Lhome/a> </button>
+<button class="tablink" onclick="openCity('Paris', this, 'green')"><li><a href="https://pixabay.com/images/search/macro%20photography/">about us </a></button>
+<button class="tablink" onclick="openCity('Tokyo', this, 'blue')"><a href="https://pixabay.com/images/search/nature/">menu </a></button>
+<button class="tablink" onclick="openCity('Oslo', this, 'orange')"><a href=https://www.pexels.com/search/food/>contact</a></button>
 
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
 
-
-
-
-
-
-
-
-
-
-
-
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 
 
   
-<center><body background="vaishnavi.jpg"></center>
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
  
 </body>
 </html> 
